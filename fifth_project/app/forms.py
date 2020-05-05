@@ -13,8 +13,8 @@ class UserForm(forms.ModelForm):
 
 class UserProfileInfoForm(forms.ModelForm):
     portfolio = forms.URLField(required=False)
-    picture = forms.ImageField(required=False)
+    # picture = forms.ImageField(required=False)
 
     class Meta:
         model = UserProfileInfo
-        fields = ('portfolio', 'picture')
+        fields = ('portfolio',)
